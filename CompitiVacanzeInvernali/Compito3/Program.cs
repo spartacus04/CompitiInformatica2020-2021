@@ -6,8 +6,6 @@ namespace Compito3
     {
         static void Main(string[] args)
         {
-            static void Main(string[] args)
-        {
             Console.WriteLine("Data l'equazione ax + b = 0");
 
             Console.WriteLine("Inserisci il valore di a");
@@ -22,7 +20,6 @@ namespace Compito3
 
             Console.WriteLine("Il valore di x è " + x);
             Console.ReadKey();
-        }
         }
     }
 }

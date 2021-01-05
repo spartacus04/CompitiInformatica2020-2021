@@ -47,7 +47,7 @@ namespace Compito6
                         Console.WriteLine("sabato");
                         break;
 
-                    case 7:
+                    case 0:
                         Console.WriteLine("domenica");
                         break;
                 }
