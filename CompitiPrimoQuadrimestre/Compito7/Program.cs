@@ -45,8 +45,10 @@ namespace Compito7
                 }
 
                 double costototale = costobenzina + quota;
-                Console.WriteLine($"\nIl costo a persona è di {Math.Round(costototale, 2)} euro");
+                Console.WriteLine($"\nIl costo totale è di {Math.Round(costototale, 2)} euro");
+                Console.WriteLine($"Il costo a persona è di {Math.Round(costototale / persone, 2)} euro");
                 Console.WriteLine($"I posti liberi rimasti sono {postiliberi}");
+
             }
             catch (Exception e)
             {
