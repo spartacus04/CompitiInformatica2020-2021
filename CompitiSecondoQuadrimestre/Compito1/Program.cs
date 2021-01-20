@@ -13,7 +13,8 @@ namespace Compito1
                 n = int.Parse(Console.ReadLine());
             } while (n <= 0);
 
-            double somma = 0, int i = 0;
+            double somma = 0;
+            int i = 0;
 
             do
             {
