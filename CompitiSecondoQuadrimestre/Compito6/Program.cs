@@ -32,6 +32,9 @@ namespace Compito6
                 s = char.Parse(Console.ReadLine());
                 j++;
             } while (s == 's' || s == 'S');
+
+            Console.ReadLine();
+            
         }
     }
 }
