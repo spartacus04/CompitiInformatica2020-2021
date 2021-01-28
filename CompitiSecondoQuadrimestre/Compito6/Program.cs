@@ -7,11 +7,12 @@ namespace Compito6
         static void Main(string[] args)
         {
             int a, b;
-            int i = 0, j = 1;
+            int j = 1;
             char s;
 
             do
             {
+                int i = 0;
                 int somma = 0;
                 Console.WriteLine("Inserisci il primo numero: ");
                 a = int.Parse(Console.ReadLine());
