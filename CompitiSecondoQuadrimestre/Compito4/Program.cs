@@ -20,7 +20,6 @@ namespace Compito4
                 b = int.Parse(Console.ReadLine());
             } while (b < 0);
 
-
             do
             {
                 somma += a;
@@ -28,6 +27,7 @@ namespace Compito4
             } while (i < b);
 
             Console.WriteLine("Il risultato è " + somma);
+            Console.ReadKey();
         }
     }
 }

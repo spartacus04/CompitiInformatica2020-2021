@@ -28,6 +28,8 @@ namespace Compito3
             else{
                 Console.WriteLine("Devi versare " + (0 - residuo) + " euro");
             }
+
+            Console.ReadKey();
         }
     }
 }
