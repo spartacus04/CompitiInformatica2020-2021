@@ -33,8 +33,8 @@ namespace Compito6
                 j++;
             } while (s == 's' || s == 'S');
 
-            Console.ReadLine();
-            
+            Console.ReadKey();
+
         }
     }
 }
