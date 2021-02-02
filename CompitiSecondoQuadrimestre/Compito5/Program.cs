@@ -6,7 +6,7 @@ namespace Compito5
     {
         static void Main(string[] args)
         {
-            int a, b, resto, quoziente;
+            int a, b, resto, quoziente = 0, somma = 0;
 
             do{
 
@@ -25,12 +25,22 @@ namespace Compito5
             } while (a == b);
 
             if(a > b){
-                quoziente = a / b;
-                resto = a % b;
+                do
+                {
+                    quoziente++;
+                    somma += b;
+                } while (somma <= (a - b));
+
+                resto = a - somma;
             }
             else{
-                quoziente = b / a;
-                resto = b % a;
+                do
+                {
+                    quoziente++;
+                    somma += a;
+                } while (somma <= (b - a));
+
+                resto = b - somma;
             }
 
             Console.WriteLine("il quoziente è pari a " + quoziente);
