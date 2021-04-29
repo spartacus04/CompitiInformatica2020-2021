@@ -20,16 +20,16 @@ namespace Compito14
                         countEvenBetween(a, b);
                         break;
                     case 3:
-                        triangleArea(a, b);
+                        Console.WriteLine("L'area del triangolo è uguale a " + triangleArea(a, b));
                         break;
                     case 4:
-                        media(a, b);
+                        Console.WriteLine("La media è " + media(a, b));
                         break;
                     case 5:
                         swapInput(ref a, ref b);
                         break;
                     case 6:
-                        multiplication(a, b);
+                        Console.WriteLine("Il prodotto è uguale a " + multiplication(a, b));
                         break;
                     case 7:
                         showOperations(operations);
@@ -75,24 +75,20 @@ namespace Compito14
         }
 
         static void countEvenBetween(int a, int b){
+            if(b > a)
+                swapInput(ref a, ref b);
             for (int i = a; i < b; i++)
             {
                 if(i % 2 == 0) Console.WriteLine(i);
             }
         }
 
-        static void triangleArea(int a, int b){
-            Console.WriteLine("L'area del triangolo è uguale a " + Math.Round((double)((a * b)/ 2), 2));
+        static double triangleArea(int a, int b){
+            return Math.Round((double)((a * b)/ 2), 2);
         }
 
-        static void media(int a, int b){
-            int m = 0, i = 0;
-            for(; a < b; i++){
-                System.Console.WriteLine(a);
-                m += a;
-                a++;
-            }
-            Console.WriteLine("La media è " + (double)(m / i));
+        static double media(int a, int b){
+            return ((a + b) / 2);
         }
 
         static void swapInput(ref int a, ref int b){
@@ -107,7 +103,7 @@ namespace Compito14
             {
                 sum += a;
             }
-            Console.WriteLine("Il prodotto è uguale a " + sum);
+            return sum;
         }
  
         static void showOperations(int i){
