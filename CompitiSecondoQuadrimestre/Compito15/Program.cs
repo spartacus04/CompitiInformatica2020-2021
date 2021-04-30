@@ -54,7 +54,7 @@ namespace Compito15
             if(cof == cof2){
                 System.Console.WriteLine("Le rette sono parallele");
             }
-            else if(cof == (1 / cof2)){
+            else if(cof == (-(1 / cof2))){
                 System.Console.WriteLine("Le rette sono perpendicolari");
             }
             else{
