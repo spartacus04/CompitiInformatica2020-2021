@@ -10,7 +10,7 @@ namespace Compito15
             do
             {
                 sel = showMenu();
-                System.Console.WriteLine();
+                Console.WriteLine();
                 switch(sel){
                     case 1:
                         rette();
@@ -19,7 +19,7 @@ namespace Compito15
                     temperature();
                         break;
                 }
-                System.Console.WriteLine();
+                Console.WriteLine();
             } while (sel != 3);
         }
 
@@ -38,10 +38,10 @@ namespace Compito15
             int sel;
             do
             {
-                System.Console.WriteLine("Scegli un opzione: ");
-                System.Console.WriteLine("1. Verificare tramite coefficienti angolari la relazione tra 2 rette");
-                System.Console.WriteLine("2. Convertire altre temperature in gradi celsius");
-                System.Console.WriteLine("3. Esci dal programma");
+                Console.WriteLine("Scegli un opzione: ");
+                Console.WriteLine("1. Verificare tramite coefficienti angolari la relazione tra 2 rette");
+                Console.WriteLine("2. Convertire altre temperature in gradi celsius");
+                Console.WriteLine("3. Esci dal programma");
                 sel = int.Parse(Console.ReadLine());
             } while (sel < 1 && sel > 3);
             return sel;
@@ -52,13 +52,13 @@ namespace Compito15
             double cof2 = inputData("Inserisci il coefficiente angolare della retta 2");
 
             if(cof == cof2){
-                System.Console.WriteLine("Le rette sono parallele");
+                Console.WriteLine("Le rette sono parallele");
             }
             else if(cof == (-(1 / cof2))){
-                System.Console.WriteLine("Le rette sono perpendicolari");
+                Console.WriteLine("Le rette sono perpendicolari");
             }
             else{
-                System.Console.WriteLine("Le rette sono incidenti");
+                Console.WriteLine("Le rette sono incidenti");
             }
         }
         static void temperature(){
@@ -71,10 +71,10 @@ namespace Compito15
             double temp = inputData("Inserisci la temperatura: ");
 
             if(u == 1){
-                System.Console.WriteLine("Il valore della temperatura in celsius è " + ((temp * 1.8) +32));
+                Console.WriteLine("Il valore della temperatura in celsius è " + ((temp * 1.8) +32));
             }
             else{
-                System.Console.WriteLine("Il valore della temperatura in celsius è " + (273.15 + temp));
+                Console.WriteLine("Il valore della temperatura in celsius è " + (273.15 + temp));
             }
 
         }
