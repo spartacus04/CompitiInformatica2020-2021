@@ -8,7 +8,7 @@ namespace Compito19
         {
             double[] temps = randomVect(input("Inserisci il numero di giorni da misurare"));
             
-            Double med = 0, maxTemp = -273.15;
+            Double med = 0, maxTemp = -273.15, minTemp;
 
             for (int i = 0; i < temps.Length; i++)
             {
@@ -17,10 +17,17 @@ namespace Compito19
                 if(temps[i] > maxTemp) maxTemp = temps[i];
             }
 
+            minTemp = maxTemp;
+
+            for (int i = 0; i < temps.Length; i++)
+            {
+                if(temps[i] < minTemp) minTemp = temps[i];
+            }
+
             med /= temps.Length;
 
             System.Console.WriteLine("La media delle temperature è " + med);
-            System.Console.WriteLine("La temperatura massima è " + maxTemp);
+            System.Console.WriteLine("L'escursione massima è " + (maxTemp - minTemp));
 
             double above = inputD("Inserisci un numero per visualizzare le temperature maggiori");
 
